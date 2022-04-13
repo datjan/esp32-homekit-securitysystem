@@ -28,6 +28,8 @@ GPIO18 = homekit state night
 
 GPIO19 = homekit state stay
 
+![alt text](https://github.com/datjan/esp32-homekit-securitysystem/blob/main/connection%20schema.png?raw=true)
+
 
 ## Development
 This sketch is for following development environment
