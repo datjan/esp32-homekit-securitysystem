@@ -27,22 +27,22 @@
 /*
  * 
 D1 mini -> Potential free contact (state away)
-GND -> Potential free contact
+3V3 -> Potential free contact
 GPIO16 -> Potential free contact
 GPIO16 -> 10kOhm -> GND
 
 D1 mini -> Potential free contact (state triggered)
-GND -> Potential free contact
+3V3 -> Potential free contact
 GPIO17 -> Potential free contact
 GPIO17 -> 10kOhm -> GND
 
 D1 mini -> Potential free contact (state night)
-GND -> Potential free contact
+3V3 -> Potential free contact
 GPIO18 -> Potential free contact
 GPIO18 -> 10kOhm -> GND
 
 D1 mini -> Potential free contact (state stay)
-GND -> Potential free contact
+3V3 -> Potential free contact
 GPIO19 -> Potential free contact
 GPIO19 -> 10kOhm -> GND
 
