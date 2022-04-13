@@ -15,9 +15,9 @@ The following hardware is required:
 Connection:
 ESP32 -> Potential free contact
 ```
-GND -> Potential free contact
+3V3 -> Potential free contact
 GPIO? -> Potential free contact
-GPIO? -> 10kOhm -> 3V3
+GPIO? -> 10kOhm -> GND
 ```
 
 GPIO16 = homekit state away
