@@ -26,22 +26,22 @@
  ********************************************************************************/
 /*
  * 
-D1 mini -> Potential free contact (state away)
+ESP32 -> Potential free contact (state away)
 3V3 -> Potential free contact
 GPIO16 -> Potential free contact
 GPIO16 -> 10kOhm -> GND
 
-D1 mini -> Potential free contact (state triggered)
+ESP32 -> Potential free contact (state triggered)
 3V3 -> Potential free contact
 GPIO17 -> Potential free contact
 GPIO17 -> 10kOhm -> GND
 
-D1 mini -> Potential free contact (state night)
+ESP32 -> Potential free contact (state night)
 3V3 -> Potential free contact
 GPIO18 -> Potential free contact
 GPIO18 -> 10kOhm -> GND
 
-D1 mini -> Potential free contact (state stay)
+ESP32 -> Potential free contact (state stay)
 3V3 -> Potential free contact
 GPIO19 -> Potential free contact
 GPIO19 -> 10kOhm -> GND
@@ -65,16 +65,16 @@ void setup() {                // Your HomeSpan code should be placed within the 
   Serial.begin(115200);       // Start a serial connection so you can receive HomeSpan diagnostics and control the device using HomeSpan's Command-Line Interface (CLI)
 
   // Pins to Input
-  pinMode(pinStatusAway, INPUT_PULLDOWN); // Default state HIGH
-  pinMode(pinStatusTriggered, INPUT_PULLDOWN); // Default state HIGH
-  pinMode(pinStatusNight, INPUT_PULLDOWN); // Default state HIGH
-  pinMode(pinStatusStay, INPUT_PULLDOWN); // Default state HIGH
+  pinMode(pinStatusAway, INPUT_PULLDOWN); // Default state LOW
+  pinMode(pinStatusTriggered, INPUT_PULLDOWN); // Default state LOW
+  pinMode(pinStatusNight, INPUT_PULLDOWN); // Default state LOW
+  pinMode(pinStatusStay, INPUT_PULLDOWN); // Default state LOW
   
 
-  homeSpan.begin(Category::SecuritySystems,"HomeSpan Security");   // initializes a HomeSpan device named "HomeSpan Lightbulb" with Category set to Lighting
+  homeSpan.begin(Category::SecuritySystems,"ESP32 Security");   // initializes a HomeSpan device named "HomeSpan Lightbulb" with Category set to Lighting
       
   new SpanAccessory();                                                          
-    new DEV_Identify("Security System","HomeSpan","123-ABC","Alarm","0.9",0);
+    new DEV_Identify("Security System","DATJAN","datjan.esp32.001","esp32-homekit-securitysystem","1.0",0);
     new Service::HAPProtocolInformation();
       new Characteristic::Version("1.1.0");
     new DEV_SecuritySystem(); 
