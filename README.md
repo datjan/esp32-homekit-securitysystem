@@ -1,7 +1,7 @@
 # esp32-homekit-securitysystem
 This is a native HomeKit security system with ESP32 based on potential free contacts.
 
-![alt text](https://github.com/datjan/esp32-homekit-securitysystem/blob/main/homekit%20example.png?raw=true)
+![alt text](https://github.com/datjan/esp32-homekit-securitysystem/blob/main/homekit-example.png?raw=true)
 
 
 ## Hardware
@@ -28,7 +28,7 @@ GPIO18 = homekit state night
 
 GPIO19 = homekit state stay
 
-![alt text](https://github.com/datjan/esp32-homekit-securitysystem/blob/main/connection%20schema.png?raw=true)
+![alt text](https://github.com/datjan/esp32-homekit-securitysystem/blob/main/connection-schema.png?raw=true)
 
 
 ## Development
